@@ -9,6 +9,21 @@ import {
   Shield 
 } from 'lucide-react';
 
+// Import service images
+import privateLandTourImg from '@/assets/private-land-tour.jpg';
+import visaAssistanceImg from '@/assets/visa-assistance.jpg';
+import privateCarDriverImg from '@/assets/private-car-driver.jpg';
+import dailyGuideImg from '@/assets/daily-guide.jpg';
+import photographerImg from '@/assets/photographer.jpg';
+import privateBusImg from '@/assets/private-bus.jpg';
+import airportTransferImg from '@/assets/airport-transfer.jpg';
+import travelInsuranceImg from '@/assets/travel-insurance.jpg';
+
+// Import gallery images  
+import gallery1 from '@/assets/gallery-1.jpg';
+import gallery2 from '@/assets/gallery-2.jpg';
+import gallery3 from '@/assets/gallery-3.jpg';
+
 export interface Service {
   id: string;
   title: string;
@@ -34,7 +49,7 @@ export const services: Service[] = [
     fullDescription: 'Nikmati pengalaman traveling yang tak terlupakan dengan layanan Private Land Tour kami. Dengan guide berpengalaman dan kendaraan yang nyaman, kami akan mengantarkan Anda ke destinasi-destinasi menakjubkan dengan fleksibilitas penuh sesuai keinginan Anda.',
     price: 'Mulai dari Rp 1.500.000',
     priceDetail: 'Harga per hari untuk 1-4 orang',
-    image: '/api/placeholder/400/300',
+    image: privateLandTourImg,
     icon: MapPin,
     features: [
       'Guide profesional berpengalaman',
@@ -51,7 +66,7 @@ export const services: Service[] = [
       'Parkir',
       'Air mineral'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     popular: true,
     duration: '8-10 jam',
     groupSize: '1-15 orang'
@@ -63,7 +78,7 @@ export const services: Service[] = [
     fullDescription: 'Layanan visa assistance kami membantu Anda mengurus visa ke berbagai negara dengan proses yang mudah, cepat, dan terpercaya. Tim ahli kami akan memandu Anda dari awal hingga visa disetujui.',
     price: 'Mulai dari Rp 500.000',
     priceDetail: 'Biaya handling, belum termasuk fee kedutaan',
-    image: '/api/placeholder/400/300',
+    image: visaAssistanceImg,
     icon: FileText,
     features: [
       'Konsultasi dokumen gratis',
@@ -79,7 +94,7 @@ export const services: Service[] = [
       'Review dokumen',
       'Koordinasi dengan kedutaan'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: '7-21 hari kerja',
     groupSize: 'Individual/keluarga'
   },
@@ -90,7 +105,7 @@ export const services: Service[] = [
     fullDescription: 'Layanan sewa mobil dengan driver profesional yang berpengalaman. Nikmati kenyamanan berkendara tanpa harus repot menyetir sendiri. Tersedia berbagai jenis kendaraan sesuai kebutuhan Anda.',
     price: 'Mulai dari Rp 600.000',
     priceDetail: 'Per hari (12 jam) dalam kota',
-    image: '/api/placeholder/400/300',
+    image: privateCarDriverImg,
     icon: Car,
     features: [
       'Driver berpengalaman & berlisensi',
@@ -107,7 +122,7 @@ export const services: Service[] = [
       'Tol dalam kota',
       'Air mineral'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: 'Fleksibel',
     groupSize: '1-7 orang'
   },
@@ -118,7 +133,7 @@ export const services: Service[] = [
     fullDescription: 'Dapatkan pengalaman traveling yang lebih berkesan dengan guide harian yang berpengalaman. Guide kami akan memberikan informasi menarik tentang destinasi, budaya lokal, dan rekomendasi tempat terbaik.',
     price: 'Mulai dari Rp 350.000',
     priceDetail: 'Per hari (8 jam)',
-    image: '/api/placeholder/400/300',
+    image: dailyGuideImg,
     icon: Users,
     features: [
       'Guide berlisensi resmi',
@@ -134,7 +149,7 @@ export const services: Service[] = [
       'Rekomendasi tempat makan',
       'Bantuan belanja oleh-oleh'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: '8 jam',
     groupSize: '1-20 orang'
   },
@@ -145,7 +160,7 @@ export const services: Service[] = [
     fullDescription: 'Abadikan momen indah perjalanan Anda dengan jasa fotografer profesional kami. Dapatkan foto-foto berkualitas tinggi yang akan menjadi kenangan tak terlupakan dari trip Anda.',
     price: 'Mulai dari Rp 800.000',
     priceDetail: 'Per hari dengan 50+ edited photos',
-    image: '/api/placeholder/400/300',
+    image: photographerImg,
     icon: Camera,
     features: [
       'Fotografer berpengalaman',
@@ -161,7 +176,7 @@ export const services: Service[] = [
       'Online gallery',
       'High resolution photos'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: '6-8 jam',
     groupSize: '1-10 orang'
   },
@@ -172,7 +187,7 @@ export const services: Service[] = [
     fullDescription: 'Untuk grup besar, nikmati kenyamanan bus privat dengan fasilitas lengkap. Cocok untuk family trip, corporate outing, atau wisata rombongan dengan kapasitas hingga 50 orang.',
     price: 'Mulai dari Rp 2.500.000',
     priceDetail: 'Per hari untuk bus 35-45 seat',
-    image: '/api/placeholder/400/300',
+    image: privateBusImg,
     icon: Bus,
     features: [
       'Bus pariwisata berkualitas',
@@ -189,7 +204,7 @@ export const services: Service[] = [
       'Parkir',
       'Driver allowance'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: 'Fleksibel',
     groupSize: '25-50 orang'
   },
@@ -200,7 +215,7 @@ export const services: Service[] = [
     fullDescription: 'Mulai dan akhiri perjalanan Anda dengan layanan airport transfer yang profesional. Kami menjamin ketepatan waktu dan kenyamanan perjalanan dari/ke bandara.',
     price: 'Mulai dari Rp 150.000',
     priceDetail: 'One way dalam kota',
-    image: '/api/placeholder/400/300',
+    image: airportTransferImg,
     icon: Plane,
     features: [
       'Monitoring flight schedule',
@@ -216,7 +231,7 @@ export const services: Service[] = [
       'Welcome sign',
       'Luggage handling'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     popular: true,
     duration: '1-3 jam',
     groupSize: '1-7 orang'
@@ -228,7 +243,7 @@ export const services: Service[] = [
     fullDescription: 'Lindungi perjalanan Anda dengan asuransi travel yang komprehensif. Dapatkan perlindungan dari berbagai risiko seperti kecelakaan, sakit, kehilangan bagasi, hingga pembatalan perjalanan.',
     price: 'Mulai dari Rp 50.000',
     priceDetail: 'Per orang per hari',
-    image: '/api/placeholder/400/300',
+    image: travelInsuranceImg,
     icon: Shield,
     features: [
       'Medical coverage hingga $50,000',
@@ -244,7 +259,7 @@ export const services: Service[] = [
       'Emergency assistance',
       'Digital certificate'
     ],
-    gallery: ['/api/placeholder/600/400', '/api/placeholder/600/400', '/api/placeholder/600/400'],
+    gallery: [gallery1, gallery2, gallery3],
     duration: 'Sesuai durasi trip',
     groupSize: 'Individual/grup'
   }

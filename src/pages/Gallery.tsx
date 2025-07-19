@@ -6,6 +6,17 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Star, Quote, MapPin } from 'lucide-react';
 
+// Import service images
+import privateLandTourImg from '@/assets/private-land-tour.jpg';
+import photographerImg from '@/assets/photographer.jpg';
+import dailyGuideImg from '@/assets/daily-guide.jpg';
+import airportTransferImg from '@/assets/airport-transfer.jpg';
+import privateCarDriverImg from '@/assets/private-car-driver.jpg';
+import gallery1 from '@/assets/gallery-1.jpg';
+import gallery2 from '@/assets/gallery-2.jpg';
+import gallery3 from '@/assets/gallery-3.jpg';
+import testimonialAvatars from '@/assets/testimonial-avatars.jpg';
+
 const testimonials = [
   {
     id: 1,
@@ -14,7 +25,7 @@ const testimonials = [
     service: 'Private Land Tour',
     rating: 5,
     comment: 'Pengalaman yang luar biasa! Guide sangat profesional dan ramah. Destinasi yang dikunjungi sangat indah dan rute perjalanan sangat efisien. Highly recommended!',
-    image: '/api/placeholder/100/100',
+    image: testimonialAvatars,
     date: 'November 2024'
   },
   {
@@ -24,7 +35,7 @@ const testimonials = [
     service: 'Airport Transfer',
     rating: 5,
     comment: 'Pelayanan tepat waktu dan driver sangat profesional. Mobil bersih dan nyaman. Pasti akan menggunakan layanan ini lagi di masa depan.',
-    image: '/api/placeholder/100/100',
+    image: testimonialAvatars,
     date: 'Oktober 2024'
   },
   {
@@ -34,7 +45,7 @@ const testimonials = [
     service: 'Photographer',
     rating: 5,
     comment: 'Hasil foto sangat memuaskan! Fotografer sangat kreatif dan profesional. Momen liburan kami terabadikan dengan sempurna. Terima kasih TravelPro!',
-    image: '/api/placeholder/100/100',
+    image: testimonialAvatars,
     date: 'September 2024'
   },
   {
@@ -44,7 +55,7 @@ const testimonials = [
     service: 'Visa Assistance',
     rating: 5,
     comment: 'Proses pengurusan visa sangat mudah dan cepat. Tim sangat membantu dari awal hingga visa approved. Recommended untuk yang butuh bantuan visa!',
-    image: '/api/placeholder/100/100',
+    image: testimonialAvatars,
     date: 'Agustus 2024'
   },
   {
@@ -54,7 +65,7 @@ const testimonials = [
     service: 'Private Car + Driver',
     rating: 5,
     comment: 'Driver sangat berpengalaman dan sopan. Perjalanan keluarga kami menjadi sangat nyaman dan aman. Mobil dalam kondisi sangat baik dan bersih.',
-    image: '/api/placeholder/100/100',
+    image: testimonialAvatars,
     date: 'Juli 2024'
   }
 ];
@@ -62,56 +73,56 @@ const testimonials = [
 const galleryImages = [
   {
     id: 1,
-    src: '/api/placeholder/400/300',
+    src: privateLandTourImg,
     alt: 'Beautiful mountain landscape tour',
     location: 'Bromo, Jawa Timur',
     category: 'Tour'
   },
   {
     id: 2,
-    src: '/api/placeholder/400/300',
-    alt: 'Beach sunset photography',
+    src: photographerImg,
+    alt: 'Professional travel photography',
     location: 'Pantai Kuta, Bali',
     category: 'Photography'
   },
   {
     id: 3,
-    src: '/api/placeholder/400/300',
-    alt: 'Cultural temple visit',
+    src: dailyGuideImg,
+    alt: 'Cultural temple visit with guide',
     location: 'Borobudur, Yogyakarta',
     category: 'Tour'
   },
   {
     id: 4,
-    src: '/api/placeholder/400/300',
+    src: airportTransferImg,
     alt: 'Airport transfer service',
     location: 'Bandara Soekarno-Hatta',
     category: 'Transfer'
   },
   {
     id: 5,
-    src: '/api/placeholder/400/300',
+    src: gallery1,
     alt: 'Group travel photography',
     location: 'Malioboro, Yogyakarta',
     category: 'Photography'
   },
   {
     id: 6,
-    src: '/api/placeholder/400/300',
-    alt: 'Traditional market tour',
+    src: gallery2,
+    alt: 'Traditional cultural tour',
     location: 'Pasar Floating Banjarmasin',
     category: 'Tour'
   },
   {
     id: 7,
-    src: '/api/placeholder/400/300',
+    src: privateCarDriverImg,
     alt: 'Private car service',
     location: 'Jakarta City Tour',
     category: 'Transport'
   },
   {
     id: 8,
-    src: '/api/placeholder/400/300',
+    src: gallery3,
     alt: 'Adventure photography',
     location: 'Kawah Ijen, Jawa Timur',
     category: 'Photography'
